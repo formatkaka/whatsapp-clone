@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: go-starter-stage
+  name: go-starter-stage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-starter-stage
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: go-starter-stage
+    spec:
+      containers:
+      - image: 400605271625.dkr.ecr.ap-south-1.amazonaws.com/go-starter
+        name: go-starter
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "50Mi"
+            cpu: "10m"
+          limits:
+            memory: "200Mi"
+            cpu: "100m"
+        volumeMounts:
+          - mountPath: /root/.env.stage
+            subPath: .env.stage
+            name: env
+      volumes:
+        - name: env
+          configMap:
+            name: go-starter-stage-config
+            items:
+            - key: .env.stage
+              path: .env.stage
+status: {}
