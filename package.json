@@ -1,0 +1,24 @@
+{
+  "name": "whatsapp-clone",
+  "version": "1.0.0",
+  "description": "[Tour of Golang](https://tour.golang.org/welcome/1)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd server; nodemon --watch './**/*.go' --signal SIGTERM --exec 'go' run main.go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formatkaka/whatsapp-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/formatkaka/whatsapp-clone/issues"
+  },
+  "homepage": "https://github.com/formatkaka/whatsapp-clone#readme",
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

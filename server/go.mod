@@ -6,6 +6,8 @@ require (
 	github.com/cucumber/godog v0.8.1 // indirect
 	github.com/elastic/go-sysinfo v1.7.0 // indirect
 	github.com/elastic/go-windows v1.0.1 // indirect
+	github.com/fatih/color v1.9.0 // indirect
+	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/gin-gonic/gin v1.7.4
 	github.com/go-playground/validator/v10 v10.9.0 // indirect
 	github.com/go-redis/redis v6.15.9+incompatible
@@ -18,6 +20,7 @@ require (
 	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/olivere/elastic/v7 v7.0.28
 	github.com/prometheus/procfs v0.7.3 // indirect
+	github.com/radovskyb/watcher v1.0.7 // indirect
 	github.com/ugorji/go v1.2.6 // indirect
 	go.elastic.co/apm/module/apmelasticsearch v1.13.1
 	go.elastic.co/apm/module/apmgin v1.13.1
