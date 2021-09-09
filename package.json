@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "cd server; nodemon --watch './**/*.go' --signal SIGTERM --exec 'go' run main.go"
+    "server": "cd server; nodemon --watch './**/*.go' --signal SIGTERM --exec 'go' run main.go",
+    "web": "cd web; yarn dev"
   },
   "repository": {
     "type": "git",
