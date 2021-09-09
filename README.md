@@ -28,4 +28,6 @@
 
 Deps required.
 
-- `redis`
+* `redis`
+* `mysql`
+    - [Local installation and setup guide](https://flaviocopes.com/mysql-how-to-install/)
