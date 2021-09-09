@@ -38,7 +38,7 @@ type User struct {
 }
 
 func (s *SampleService) FromDb(ctx context.Context) ([]User, error) {
-	query := db.WrapQuery("SELECT userId, userName, userEmail FROM users limit 2;")
+	query := db.WrapQuery("SELECT id, userName, userEmail FROM users limit 2;")
 	rows, err := s.dbFactory("reader").QueryContext(ctx, query)
 	defer rows.Close()
 	if err != nil {
